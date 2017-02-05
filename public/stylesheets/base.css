@@ -1,0 +1,38 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	overflow-y: hidden;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav {
+	padding: 10px;
+}
+
+nav h3 {
+	margin: auto;
+}
+
+input {
+	font-family: inherit;
+	padding: 15px;
+	border: none;
+	outline: none;
+	opacity: 0.6;
+}
+
+input:focus {
+	opacity: 1;
+}
+

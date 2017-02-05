@@ -1,0 +1,54 @@
+.container {
+	width: 100%;
+	position: relative;
+	top: 50%;
+  	transform: translateY(-50%);
+}
+
+#home-menu {
+	width: 80%;
+	max-width: 500px;
+	margin: auto;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#home-menu h1 {
+	text-align: center;
+}
+
+#home-menu input {
+	text-align: center;
+	font-size: 1.5em;
+	display: block;
+	margin: 10px auto;
+}
+
+.button {
+	display: inline-block;
+	margin: auto;
+	background: rgba(0, 0, 0, 1);
+	border: 5px solid rgba(0, 0, 0, 1);
+	padding: 10px;
+	color: white;
+	border-radius: 5px;
+}
+
+.button:hover {
+	background: rgba(0, 0, 0, 0);
+	color: black;
+	cursor: pointer;
+}
+
+#jam-session-info {
+	height: 125px;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+}
+
+#jam-instruments {
+	top: 125px;
+	position: absolute;
+}
+
