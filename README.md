@@ -1,2 +1,2 @@
-# doodlr
-Real-time collaborative drawing using Socket.IO
+# jammr
+Real-time browser jam sessions using Socket.IO
