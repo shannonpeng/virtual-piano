@@ -10,8 +10,8 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 io.on('connection', function(socket) {
-  socket.on('piano-key', function(note){
-    socket.emit('piano-key', note);
+  socket.on('piano-key', function(data){
+    socket.broadcast.emit('piano-key', data);
   });
 });
 

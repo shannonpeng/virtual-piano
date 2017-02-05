@@ -16,18 +16,19 @@ FirebaseAdmin.initializeApp({
 */
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+/*router.get('/', function(req, res, next) {
 	res.render('index', {
 		title: 'jammr'
 	});
 });
+*/
 
 /* GET jam-session. */
-router.get('/jam/:id', function(req, res, next) {
+router.get('/', function(req, res, next) {
 	
 	res.render('jam-session', {
-		title: req.params.id,
-		url: HOME_DIR + '/jam/' + req.params.id
+		title: 'jammr',
+		url: HOME_DIR
 	});
 
 });

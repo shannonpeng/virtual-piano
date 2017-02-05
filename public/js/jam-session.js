@@ -67,24 +67,30 @@ $(document).ready(function() {
 		if (note) {
 			note.click();
 			note.addClass('active');
-
-			setTimeout(function() {
-				note.removeClass('active');
-			}, 100);
+		    setTimeout(function() {
+		    	 note.removeClass('active');
+		    }, 100);
 		}
 
 	}
 
   	socket.on('piano-key', function(data){
+  		console.log('data received!');
 	    piano.play(data.note[0], data.note[1], 2.5);
+	    $("[data-key='"+ data.note[0] + '-' + data.note[1] + "']").addClass('other-active');
+	    setTimeout(function() {
+	    	 $("[data-key='"+ data.note[0] + '-' + data.note[1] + "']").removeClass('other-active');
+	    }, 100);
 	});
 
 	$("#piano .key").click(function(event) {
 		var note = $(this).attr('data-key').split('-');
+		$(this).addClass('active').delay(100).removeClass('active');
 		socket.emit('piano-key', { note: note });
 	});
 
 	$("body").keypress(function(event) {
+		console.log(event.which);
 		keyboardInput(event.which);
 	});
 	
