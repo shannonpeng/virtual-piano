@@ -3,11 +3,7 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-var HOME_DIR = '25d09735.ngrok.io';
-
-var app = express();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+var HOME_DIR = '4c9cd33e.ngrok.io';
 
 // Set up Firebase
 /*var FirebaseAdmin = require('firebase-admin');
@@ -23,12 +19,6 @@ FirebaseAdmin.initializeApp({
 router.get('/', function(req, res, next) {
 	res.render('index', {
 		title: 'jammr'
-	});
-});
-
-io.on('connection', function(socket) {
-	socket.on('piano-key', function(note){
-		socket.emit('piano-key', note);
 	});
 });
 

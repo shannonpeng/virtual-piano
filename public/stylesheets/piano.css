@@ -56,10 +56,10 @@
 	background: rgb(248, 248, 248);
 }
 
-#piano .white-key:active {
-	background: linear-gradient(180deg, white, #cdcdcd);
+#piano .white-key:active, #piano .white-key.active {
+	background: linear-gradient(180deg, white, rgba(0, 0, 250, 0.2));
 }
 
-#piano .black-key:active {
+#piano .black-key:active, #piano .black-key.active {
 	background: linear-gradient(180deg, #404040, #505050);
 }

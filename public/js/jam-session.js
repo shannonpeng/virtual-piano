@@ -4,63 +4,75 @@ $(document).ready(function() {
 	var piano = Synth.createInstrument('piano');
 
 	function keyboardInput(key) {
+
+		var note;
+
 		switch (key) {
 			case 97: // a
-				$("[data-key='C-3']").click();
+				note = $("[data-key='C-3']");
 				break;
 			case 119: // w
-				$("[data-key='C#-3']").click();
+				note = $("[data-key='C#-3']");
 				break;
 			case 115: // s
-				$("[data-key='D-3']").click();
+				note = $("[data-key='D-3']");
 				break;
 			case 101: // e
-				$("[data-key='D#-3']").click();
+				note = $("[data-key='D#-3']");
 				break;
 			case 100: // d
-				$("[data-key='E-3']").click();
+				note = $("[data-key='E-3']");
 				break;
 			case 102: // f
-				$("[data-key='F-3']").click();
+				note = $("[data-key='F-3']");
 				break;
 			case 116: // t
-				$("[data-key='F#-3']").click();
+				note = $("[data-key='F#-3']");
 				break;
 			case 103: // g
-				$("[data-key='G-3']").click();
+				note = $("[data-key='G-3']");
 				break;
 			case 121: // y
-				$("[data-key='G#-3']").click();
+				note = $("[data-key='G#-3']");
 				break;
 			case 104: // h
-				$("[data-key='A-3']").click();
+				note = $("[data-key='A-3']");
 				break;
 			case 117: // u
-				$("[data-key='A#-3']").click();
+				note = $("[data-key='A#-3']");
 				break;
 			case 106: // j
-				$("[data-key='B-3']").click();
+				note = $("[data-key='B-3']");
 				break;
 			case 107: // k
-	
-				$("[data-key='C-4']").click();
+				note = $("[data-key='C-4']");
 				break;
 			case 111: // o
-				$("[data-key='C#-4']").click();
+				note = $("[data-key='C#-4']");
 				break;
 			case 108: // l
-				$("[data-key='D-4']").click();
+				note = $("[data-key='D-4']");
 				break;
 			case 112: // p
-				$("[data-key='D#-4']").click();
+				note = $("[data-key='D#-4']");
 				break;
 			case 59: // ;
-				$("[data-key='E-4']").click();
+				note = $("[data-key='E-4']");
 				break;
 			case 39: // '
-				$("[data-key='F-4']").click();
+				note = $("[data-key='F-4']");
 				break;
 		}
+
+		if (note) {
+			note.click();
+			note.addClass('active');
+
+			setTimeout(function() {
+				note.removeClass('active');
+			}, 100);
+		}
+
 	}
 
   	socket.on('piano-key', function(data){
@@ -76,7 +88,4 @@ $(document).ready(function() {
 		keyboardInput(event.which);
 	});
 	
-});
-
-
 });
