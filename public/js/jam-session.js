@@ -85,6 +85,7 @@ $(document).ready(function() {
 
 	$("#piano .key").click(function(event) {
 		var note = $(this).attr('data-key').split('-');
+		piano.play(note[0], note[1], 2.5);
 		$(this).addClass('active').delay(100).removeClass('active');
 		socket.emit('piano-key', { note: note });
 	});
