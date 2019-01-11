@@ -1,2 +1,2 @@
-# jammr
-Real-time browser jam sessions using Socket.IO
+# virtual-piano
+Real-time piano duets in the browser using Socket.IO

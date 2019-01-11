@@ -17,16 +17,16 @@
   },
   "homepage": "https://github.com/shannonpeng/jammr",
   "dependencies": {
-    "body-parser": "~1.13.2",
+    "body-parser": "^1.18.3",
     "cookie-parser": "~1.3.5",
-    "debug": "~2.2.0",
-    "express": "~4.13.1",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.14.2",
-    "firebase": "^3.6.8",
-    "firebase-admin": "^4.1.0",
-    "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0",
-    "socket.io": "^1.7.2"
+    "firebase": "^5.7.3",
+    "firebase-admin": "^6.5.0",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.2.0"
   }
 }

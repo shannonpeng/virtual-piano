@@ -3,7 +3,7 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-var HOME_DIR = '4c9cd33e.ngrok.io';
+var HOME_DIR = 'pengs-piano.herokuapp.com';
 
 // Set up Firebase
 /*var FirebaseAdmin = require('firebase-admin');
@@ -27,7 +27,7 @@ FirebaseAdmin.initializeApp({
 router.get('/', function(req, res, next) {
 	
 	res.render('jam-session', {
-		title: 'jammr',
+		title: 'welcome',
 		url: HOME_DIR
 	});
 
