@@ -41,7 +41,7 @@ var Synth, AudioSynth, AudioSynthInstrument;
 		return this._sampleRate;
 	});
 	setPub('getSampleRate', function() { return this._sampleRate; });
-	setPriv('_volume',26214,true);
+	setPriv('_volume',13107,true);
 	setPub('setVolume', function(v) {
 		v = parseFloat(v); if(isNaN(v)) { v = 0; }
 		v = Math.round(v*32768);
