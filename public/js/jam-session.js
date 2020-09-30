@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	var socket = io();
 	var piano = Synth.createInstrument('piano');
+	piano.setVolume(0.8);
 
 	function keyboardInput(key) {
 
