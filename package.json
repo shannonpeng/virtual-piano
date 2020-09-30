@@ -4,7 +4,8 @@
   "description": "Real-time jam sessions using Socket.IO",
   "main": "app.js",
   "engines": {
-    "node": "12.x"
+    "node": "12.x",
+    "npm": "6.x"
   },
   "scripts": {
     "start": "node app"
@@ -20,26 +21,27 @@
   },
   "homepage": "https://github.com/shannonpeng/virtual-piano",
   "dependencies": {
+    "@firebase/app": "^0.6.11",
     "axios": ">=0.18.1",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.3.5",
     "debug": "^4.1.1",
+    "dot-prop": ">=4.2.1",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
-    "handlebars": ">=4.5.3",
     "express-session": "^1.14.2",
-    "firebase": "^5.7.3",
-    "firebase-admin": "^6.5.0",
-    "dot-prop": ">=4.2.1",
+    "firebase": "^7.21.1",
+    "firebase-admin": "^9.2.0",
+    "handlebars": ">=4.5.3",
+    "https-proxy-agent": ">=2.2.3",
+    "lodash": ">=4.17.19",
+    "lodash.merge": ">=4.6.2",
+    "minimist": ">=0.2.1",
     "morgan": "^1.9.1",
-    "node-forge": "^0.10.0",
     "node-fetch": ">=2.6.1",
+    "node-forge": "^0.10.0",
     "serve-favicon": "^2.5.0",
     "socket.io": "^2.2.0",
-    "websocket-extensions": ">=0.1.4",
-    "https-proxy-agent": ">=2.2.3",
-    "minimist": ">=0.2.1",
-    "lodash": ">=4.17.19",
-    "lodash.merge": ">=4.6.2"
+    "websocket-extensions": ">=0.1.4"
   }
 }
