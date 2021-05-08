@@ -34,7 +34,7 @@
     "firebase-admin": "^9.2.0",
     "handlebars": ">=4.5.3",
     "https-proxy-agent": ">=2.2.3",
-    "lodash": ">=4.17.19",
+    "lodash": ">=4.17.21",
     "lodash.merge": ">=4.6.2",
     "minimist": ">=0.2.1",
     "morgan": "^1.9.1",
