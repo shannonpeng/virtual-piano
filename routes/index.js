@@ -3,7 +3,7 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-var HOME_DIR = 'pengs-piano.herokuapp.com';
+var HOME_DIR = 'pengs-piano.onrender.com';
 
 // Set up Firebase
 /*var FirebaseAdmin = require('firebase-admin');
