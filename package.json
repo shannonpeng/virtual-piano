@@ -31,7 +31,7 @@
     "express-handlebars": "^3.0.0",
     "express-session": "^1.14.2",
     "firebase": "^7.21.1",
-    "firebase-admin": "^9.2.0",
+    "firebase-admin": "^11.4.1",
     "handlebars": ">=4.5.3",
     "https-proxy-agent": ">=2.2.3",
     "lodash": ">=4.17.19",
